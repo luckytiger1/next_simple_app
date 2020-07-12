@@ -1,0 +1,22 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Post 1",
+      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis possimus accusantium fugit, non corporis necessitatibus magni laudantium vitae similique."
+    },
+    {
+      "id": 2,
+      "title": "Post 2",
+      "body": " Repellat fugit perferendis adipisci minus cumque rem ratione ab cupiditate nam tenetur, repudiandae at quae ea iusto? Iste molestias quod incidunt dolorum qui, consectetur assumenda architecto nam, id quae distinctio asperiores error est, suscipit ullam nemo repudiandae! Aut totam odit dolores?"
+    },
+    {
+      "id": 3,
+      "title": "Post 3",
+      "body": "Reiciendis sed consectetur, maxime totam mollitia accusantium a nostrum exercitationem dolor quae rerum dolore laborum labore ad placeat alias quas veniam voluptate id tempore porro laudantium et? Omnis tempore praesentium eaque enim molestias nulla vel corporis."
+    }
+  ],
+  "about": {
+    "title": "About us page."
+  }
+}
