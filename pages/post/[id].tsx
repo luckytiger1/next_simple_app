@@ -1,10 +1,10 @@
 import Router, { useRouter } from 'next/router';
 import Layout from '../../components/layout';
 import { useState, useEffect } from 'react';
-import { Post } from '../../types/types';
+import { MyPost } from '../../types/types';
 
 interface IPost {
-  post: Post;
+  post: MyPost;
 }
 
 const Post: React.FC<IPost> = ({ post }) => {
@@ -57,7 +57,7 @@ const Post: React.FC<IPost> = ({ post }) => {
 export async function getServerSideProps({ query, req }) {
   // params contains the post `id`.
   // If the route is like /posts/1, then params.id is 1
-  const res = await fetch(`http://localhost:4200/posts/${query.id}`);
+  const res = await fetch(`${process.env.BASE_URL}/posts/${query.id}`);
   const post = await res.json();
 
   // Pass post data to the page via props

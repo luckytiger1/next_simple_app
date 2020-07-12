@@ -21,7 +21,7 @@ const About: NextPage<IAbout> = ({ title }) => {
 };
 
 About.getInitialProps = async () => {
-  const response = await fetch('http://localhost:4200/about');
+  const response = await fetch(`${process.env.BASE_URL}/about`);
   const data = await response.json();
 
   return {

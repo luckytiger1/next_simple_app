@@ -1,11 +1,11 @@
 import Layout from '../components/layout';
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
-import { Post } from '../types/types';
+import { MyPost } from '../types/types';
 import { NextPage } from 'next';
 
 interface IPosts {
-  posts: Post[];
+  posts: MyPost[];
 }
 
 const Posts: NextPage<IPosts> = ({ posts: serverPost }) => {
@@ -58,7 +58,7 @@ Posts.getInitialProps = async ({ req }) => {
       posts: null,
     };
   }
-  const data = await fetch('http://localhost:4200/posts');
+  const data = await fetch(`${process.env.BASE_URL}/posts`);
   const posts = await data.json();
 
   return {
